@@ -14,6 +14,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodayList.Infrastructure", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodayList.Domain", "src\TodayList.Domain\TodayList.Domain.csproj", "{B46093D2-774C-452D-BA81-6346F9CDB512}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ci", "ci", "{E872C463-8408-4528-B4A0-BE17578CF390}"
+ProjectSection(SolutionItems) = preProject
+	.travis.yml = .travis.yml
+EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
