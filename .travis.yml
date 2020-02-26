@@ -7,3 +7,6 @@ branches:
   only:
     - master
     - dev
+script: 
+  - dotnet build
+  - dotnet test
