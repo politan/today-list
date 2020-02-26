@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{1EB3C198-51FC-40AC-8020-E58E984347FA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{462D60A0-9421-44CB-86ED-A9441E8A30C7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "scripts", "scripts", "{F87AA26A-5BC7-4D49-945E-3FE8954976B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodayList.Api", "src\TodayList.Api\TodayList.Api.csproj", "{E05AA9C1-B5E1-4BF6-BA5D-0159D389BD94}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodayList.Application", "src\TodayList.Application\TodayList.Application.csproj", "{3F3AE3D2-825D-47E6-8090-070E9070C4A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodayList.Infrastructure", "src\TodayList.Infrastructure\TodayList.Infrastructure.csproj", "{C41D3144-4FD2-4E46-85C2-50CBF9105C29}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TodayList.Domain", "src\TodayList.Domain\TodayList.Domain.csproj", "{B46093D2-774C-452D-BA81-6346F9CDB512}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E05AA9C1-B5E1-4BF6-BA5D-0159D389BD94} = {1EB3C198-51FC-40AC-8020-E58E984347FA}
+		{3F3AE3D2-825D-47E6-8090-070E9070C4A8} = {1EB3C198-51FC-40AC-8020-E58E984347FA}
+		{C41D3144-4FD2-4E46-85C2-50CBF9105C29} = {1EB3C198-51FC-40AC-8020-E58E984347FA}
+		{B46093D2-774C-452D-BA81-6346F9CDB512} = {1EB3C198-51FC-40AC-8020-E58E984347FA}
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E05AA9C1-B5E1-4BF6-BA5D-0159D389BD94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E05AA9C1-B5E1-4BF6-BA5D-0159D389BD94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E05AA9C1-B5E1-4BF6-BA5D-0159D389BD94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E05AA9C1-B5E1-4BF6-BA5D-0159D389BD94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3F3AE3D2-825D-47E6-8090-070E9070C4A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3F3AE3D2-825D-47E6-8090-070E9070C4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3F3AE3D2-825D-47E6-8090-070E9070C4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3F3AE3D2-825D-47E6-8090-070E9070C4A8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C41D3144-4FD2-4E46-85C2-50CBF9105C29}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C41D3144-4FD2-4E46-85C2-50CBF9105C29}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C41D3144-4FD2-4E46-85C2-50CBF9105C29}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C41D3144-4FD2-4E46-85C2-50CBF9105C29}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B46093D2-774C-452D-BA81-6346F9CDB512}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B46093D2-774C-452D-BA81-6346F9CDB512}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B46093D2-774C-452D-BA81-6346F9CDB512}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B46093D2-774C-452D-BA81-6346F9CDB512}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
