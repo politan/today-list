@@ -2,6 +2,10 @@
 
 Simple "to do" list for organizing your day.
 
+|Branch             |Build status                                                  
+|-------------------|-----------------------------------------------------
+|master             |[![Build Status](https://travis-ci.org/politan/today-list.svg?branch=master)](https://travis-ci.org/politan/today-list)
+|develop            |[![Build Status](https://travis-ci.org/politan/today-list.svg?branch=dev)](https://travis-ci.org/politan/today-list)
 
 ## Backend Technologies
 
