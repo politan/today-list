@@ -1,6 +1,5 @@
 ﻿using MediatR;
 using Microsoft.Extensions.DependencyInjection;
-using TodayList.Application.Assignments.Queries;
 using TodayList.Application.Assignments.Queries.GetAssignments;
 
 namespace TodayList.Api.Configurations

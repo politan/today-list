@@ -15,6 +15,19 @@ namespace TodayList.Infrastructure.Persistence
         }
         
         public DbSet<Assignment> Assignments { get; set; }
+        public DbSet<Project> Projects { get; set; }
+        public DbSet<Label> Labels { get; set; }
+
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Project>()
+                .HasMany<Assignment>(p => p.Assignments)
+                .WithOne(a => a.Project)
+                .HasForeignKey(p => p.ProjectId);
+
+            base.OnModelCreating(modelBuilder);
+        }
 
         public override Task<int> SaveChangesAsync(CancellationToken cancellationToken = new CancellationToken())
         {

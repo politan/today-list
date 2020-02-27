@@ -17,5 +17,8 @@ namespace TodayList.Domain.Entities
         public DateTime? RemindDate { get; set; }
         public bool Finished { get; set; }
         public PriorityLevel Priority { get; set; }
+        public Guid ProjectId { get; set; }
+        
+        public Project Project { get; set; }
     }
 }
