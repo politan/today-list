@@ -1,11 +1,12 @@
+using FluentValidation.AspNetCore;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TodayList.Api.Configurations;
-using TodayList.Infrastructure.Persistence;
+using TodayList.Application.Assignments.Commands.CreateAssignment;
 
 namespace TodayList.Api
 {
@@ -20,9 +21,14 @@ namespace TodayList.Api
         
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers()
+                .AddFluentValidation(fv => fv.RegisterValidatorsFromAssemblyContaining<CreateAssignmentCommandValidator>());
 
             services.AddDatabase(Configuration);
+            services.AddMediatr();
+            services.AddMapper();
+            
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)

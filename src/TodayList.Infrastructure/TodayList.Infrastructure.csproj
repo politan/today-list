@@ -12,6 +12,7 @@
 
     <ItemGroup>
       <ProjectReference Include="..\TodayList.Application\TodayList.Application.csproj" />
+      <ProjectReference Include="..\TodayList.Domain\TodayList.Domain.csproj" />
     </ItemGroup>
 
 </Project>
